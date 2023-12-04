@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Advertisement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .advertisement {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .filter {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobile Advertisement</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Categories</a> |
+        <a href="#">About</a>
+    </nav>
+
+    <section>
+        <div class="filter">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+            </select>
+
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option value="latest">Latest</option>
+                <option value="popular">Popular</option>
+            </select>
+
+            <input type="text" placeholder="Search...">
+            <button onclick="search()">Search</button>
+        </div>
+
+        <div class="advertisement">
+            <img src="advertisement_image.jpg" alt="Advertisement Image">
+            <h2>Product Title</h2>
+            <p>Description of the product goes here.</p>
+            <button>Learn More</button>
+        </div>
+
+        <!-- Add more advertisements here -->
+
+    </section>
+
+    <footer>
+        &copy; 2023 Mobile Advertisement. All rights reserved.
+    </footer>
+
+    <script>
+        function search() {
+            // Implement search functionality here
+            alert("Search button clicked");
+        }
+    </script>
+</body>
+</html>
